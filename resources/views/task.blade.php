@@ -9,6 +9,12 @@
 <body>
     
     <h1>Display Task</h1>
+    <a href="{{ route('task.create') }}">Create</a>
+    @foreach ($task as $nigger)
+        <h1>{{ $nigger->taskname }}</h1>
+        <h1>{{ $nigger->taskdescription }}</h1>
+        
+    @endforeach
 
 </body>
 </html>
